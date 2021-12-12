@@ -22,13 +22,14 @@ export default function TextField(props) {
 
     const HandleClickFind = () => {
         if(find === ""){
-            alert("please enter the word which you want to find :))");
+            props.SetAlert("please enter the word which you want to find","danger");
+            
         }else{
             let temp = text.indexOf(find,0);
             if(temp>=0){
-                alert("This word present in your text");
+                props.SetAlert("This word present in your text","success");
             }else{
-                alert("This word not present in your text");
+                props.SetAlert("This word not present in your text","danger");
             }
         }
     }
