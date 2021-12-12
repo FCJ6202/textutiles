@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Field from './Components/TextField';
 
 function App() {
   return (
@@ -9,6 +10,10 @@ function App() {
          about = "About"
          home = "Home"
       />
+      <Field 
+        heading = "Enter your text"      
+      />
+
     </>
   );
 }
