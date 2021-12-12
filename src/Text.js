@@ -1,4 +1,5 @@
 import './App.css';
+//import About from './Components/About';
 import Navbar from './Components/Navbar';
 import Field from './Components/TextField';
 
@@ -13,6 +14,7 @@ function App() {
       <Field 
         heading = "Enter your text"      
       />
+      {/* <About/> */}
 
     </>
   );
