@@ -1,14 +1,13 @@
 import { useState } from 'react'
 import Alert from './Components/Alert';
-import About from './Components/About';
+//import About from './Components/About';
 import Navbar from './Components/Navbar';
 import Field from './Components/TextField';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route
+// } from "react-router-dom";
 
 function App() {
   const [alert, setalert] = useState({
@@ -42,7 +41,7 @@ function App() {
   }
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navbar
           title="textutiles"
           about="About"
@@ -51,20 +50,20 @@ function App() {
           toggleMode={toggleMode}
         />
         <Alert message={alert.message} type={alert.type} />
-        <div className="container my-3">
+        {/* <div className="container my-3">
         <Routes>
-          <Route exact path="/" element={
+          <Route exact path="/" element={ */}
             <Field
             SetAlert={SetAlert}
             heading="Enter your text"
             />
-          }/>
+          {/* }/>
           <Route exact path="/about" element={
             <About />
           }/>
         </Routes>
         </div>
-      </Router>
+      </Router> */}
 
     </>
   );
